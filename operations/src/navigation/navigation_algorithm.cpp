@@ -254,6 +254,7 @@ double NavigationAlgo::changeInOrientation(const geometry_msgs::PoseStamped& des
   }
 }
 
+
 bool NavigationAlgo::transformPose(geometry_msgs::PoseStamped& pose, const std::string& frame, const tf2_ros::Buffer& tf_buffer, float duration, int tries)
 {
   int count = 0;
