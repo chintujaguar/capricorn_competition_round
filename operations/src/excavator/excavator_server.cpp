@@ -250,7 +250,7 @@ bool publishExcavatorMessage(int task, const geometry_msgs::Point &target, const
     publishAngles(last_vol_loc_angle, -2, 1, 0); // Step for safe trajectory to not bump into camera
     ros::Duration(2).sleep();
     publishAngles(last_vol_loc_angle, 1, 1, -2); // This set of values move the scoop under the surface
-    ros::Duration(5).sleep();
+    ros::Duration(4).sleep();
 
     dumpAngle = getDumpAngleInBase(3);
 
